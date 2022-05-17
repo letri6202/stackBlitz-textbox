@@ -1,0 +1,18 @@
+<h2>Enter your name:</h2>
+<p>First Name</p>
+<input type="text" id="username" name="username" [(ngModel)]="username" />
+
+<button type="button" (click)="firstName()">Enter</button>
+
+<p>Last Name</p>
+
+<input type="text" id="username2" name="username2" [(ngModel)]="username2" />
+
+<button type="button" (click)="lastName()">Enter</button>
+
+<p></p>
+<button type="button" (click)="displayFullName()">Display!</button>
+
+<p *ngIf="{fullname}">
+  {{ fullname }}
+</p>
